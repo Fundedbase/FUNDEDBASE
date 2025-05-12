@@ -1,0 +1,112 @@
+.nav-btn-wrapper {
+  padding: 1px;
+  border-radius: 4px;
+  background: linear-gradient(
+    315.99deg,
+    rgba(238, 255, 247, 0.7) 3.89%,
+    rgba(0, 168, 106, 0.7) 94.54%
+  );
+  display: inline-block;
+}
+
+.nav-dark-btn-wrapper {
+  border-radius: 5px;
+  padding: 1px;
+  background: linear-gradient(
+    315.99deg,
+    rgba(238, 255, 247, 0.7) 3.89%,
+    rgba(0, 168, 106, 0.7) 94.54%
+  );
+  display: inline-block;
+}
+
+.dark-btn-wrapper {
+  padding: 1px;
+  border-radius: 4px;
+  background: linear-gradient(
+    315.99deg,
+    rgba(238, 255, 247, 0.7) 3.89%,
+    rgba(0, 168, 106, 0.7) 94.54%
+  );
+  display: inline-block;
+}
+
+.tp-left-side {
+  background: radial-gradient(
+    79.11% 79.11% at 100% 12.66%,
+    /* #4c6fc0 0%,
+    #04225e 59.01%,
+    #000712 100% */
+    #33f5a6 0%,
+    #00c072 59.01%,
+    #003421 100%
+  );
+  backdrop-filter: blur(24.8px);
+}
+
+.tp-right-side {
+  background: radial-gradient(
+    79.11% 79.11% at 0% 12.66%,
+    #4c6fc0 0%,
+    #04225e 59.01%,
+    #000712 100%
+  );
+  backdrop-filter: blur(24.8px);
+}
+
+.get-funded-cta-card-bg {
+  background: radial-gradient(
+    64.79% 132.5% at 50% 160.83%,
+    /* rgb(76, 111, 192) 0%,
+    rgb(4, 34, 94) 59.01%, */
+    rgb(76, 192, 130) 0%,
+    rgb(4, 94, 73) 59.01%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
+.text-gradient {
+  --from: #fbfbfb;
+  --to: #565658;
+
+  background: var(--to);
+  background: linear-gradient(-90deg, var(--from) 0%, var(--to) 100%);
+  background: -webkit-linear-gradient(-90deg, var(--from) 0%, var(--to) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ! MARQUEE */
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: scrollMarquee 30s linear infinite;
+  will-change: transform;
+}
+
+.overflow-hidden:hover .marquee {
+  animation: scrollMarquee 30s linear infinite; /* slower on hover */
+}
+
+/* ! FADE IN DOWN */
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-down {
+  animation: fade-in-down 0.3s ease-out;
+}
