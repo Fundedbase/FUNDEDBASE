@@ -6,7 +6,8 @@ import { FaCopy, FaCheck, FaExternalLinkAlt } from "react-icons/fa";
 import { QRCodeSVG } from "qrcode.react";
 
 // Production Solana address
-const PROJECT_SOLANA_ADDRESS = "12B1UHinAxijkF5Et8qdju2juN3mST2zeToBxjRYwkLr";
+// const PROJECT_SOLANA_ADDRESS = "12B1UHinAxijkF5Et8qdju2juN3mST2zeToBxjRYwkLr";
+const PROJECT_SOLANA_ADDRESS = "4JVzFysa8kf5UBNAJQ4xkCd8C5LeHCKwj3sjHLNV2wJy";
 
 const CheckoutPage = () => {
   const searchParams = useSearchParams();

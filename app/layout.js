@@ -1,6 +1,7 @@
 import "./globals.css";
 import "./app.css";
 import logo from "@/assets/icons/logo.jpeg";
+import logoOpenGraph from "@/assets/icons/opengraph-img.png";
 
 export const metadata = {
   metadataBase: new URL('https://fundedbase.com'),
@@ -14,7 +15,7 @@ export const metadata = {
     siteName: "FundedBase",
     images: [
       {
-        url: logo.src,
+        url: logoOpenGraph.src,
         width: 1200,
         height: 630,
         alt: "FundedBase - Cryptocurrency Trading Platform",
@@ -27,7 +28,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "FundedBase - Empowering Cryptocurrency Traders Worldwide",
     description: "FundedBase provides cryptocurrency traders with access to funded accounts and professional trading opportunities. Join our community and start trading today.",
-    images: [logo.src],
+    images: [logoOpenGraph.src],
   },
   robots: {
     index: true,
